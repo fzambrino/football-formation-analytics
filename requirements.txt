@@ -1,2 +1,7 @@
+# --- Data Ingestion & ETL ---
 pandas
 pyarrow
+
+# --- Data Visualization & Pitch Drawing ---
+mplsoccer
+matplotlib
