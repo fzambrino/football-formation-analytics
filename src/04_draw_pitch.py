@@ -2,36 +2,38 @@ import os
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 
+# SCRIPT 04: TEST DI DISEGNO DEL CAMPO DA CALCIO BASELINE
+# Questo script funge da test isolato per verificare il corretto funzionamento
+# della libreria 'mplsoccer' e la generazione dei percorsi di output.
+
 def main():
-    # Determine the directory where this script is located
+    # Configurazione dei percorsi dei file
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
-    # Define the output directory for visualizations (out/ folder)
-    output_dir = os.path.join(script_dir, "..", "out")
+    # Definisce la directory di output (out/). Se non esiste, la crea
+    output_dir = os.path.join(script_dir, "..", "out", "pitch_test")
     os.makedirs(output_dir, exist_ok=True)
 
-    print("Drawing the tactical football pitch...")
+    print("Disegnando il campo da calcio...")
 
-    # Initialize a standard tactical pitch (120x80 meters is the default Opta standard)
+    # Inizializza un campo da calcio standard (120x80 metri è lo standard di default per Opta)
     pitch = Pitch(pitch_type='opta', pitch_color='#22312b', line_color='#c7d5cc')
 
-    # Create the matplotlib figure and axis
+    # Crea la figura
     fig, ax = pitch.draw(figsize=(13, 8))
 
-    # Set a professional background color for the figure surrounding the pitch
+    # Set dello sfondo
     fig.patch.set_facecolor('#22312b')
 
-    # Add a temporary title to verify text rendering
+    # Aggiunta del titolo
     ax.set_title("Tactical Pitch Baseline - Test", color='#c7d5cc', fontsize=18, pad=10)
 
-    # Define the output file path
+    # Definizione titolo del file e della locazione
     output_file = os.path.join(output_dir, "tactical_pitch_baseline.png")
-
-    # Save the figure to the out/ folder
     plt.savefig(output_file, facecolor=fig.get_facecolor(), edgecolor='none', dpi=300, bbox_inches='tight')
     plt.close()
 
-    print(f"Success! The pitch image has been saved to: {output_file}")
+    print(f"Successo! L'immagine del campo da calcio è stata salvata in:: {output_file}")
 
 if __name__ == "__main__":
     main()

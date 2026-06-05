@@ -3,7 +3,11 @@ import os
 import glob
 import pandas as pd
 
-# Definizione dei percorsi dinamici
+# SCRIPT 03: MERGE DEI FILE DI TRACKING
+# Questo script prende i singoli file di tracking e li utilizza per la definizione di un unico
+# file .parque dal quale prendere le informazioni del match per processarle
+
+# Configurazione dei percorsi dei file
 script_dir = os.path.dirname(os.path.abspath(__file__))
 cartella_tracking = os.path.abspath(os.path.join(script_dir, "..", "data", "raw", "tracking"))
 cartella_output = os.path.abspath(os.path.join(script_dir, "..", "data", "processed"))
