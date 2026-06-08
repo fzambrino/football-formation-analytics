@@ -81,7 +81,7 @@ def main():
     plt.plot(centroid_series['match_progress'], centroid_series[team_a_name],
              color='#457b9d', label=f'Team {team_a_name}', linewidth=1.5, alpha=0.85)
 
-    # Stile degli assi (Tema Lavagna)
+    # Stile degli assi (Stile Lavagna)
     ax.spines['bottom'].set_color('#c7d5cc')
     ax.spines['left'].set_color('#c7d5cc')
     ax.spines['top'].set_visible(False)
