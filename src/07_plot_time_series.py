@@ -36,7 +36,7 @@ def main():
     x_clamped = np.clip(df_clean['x'], X_MIN, X_MAX)
     df_clean['x_normalized'] = ((x_clamped - X_MIN) / (X_MAX - X_MIN)) * PITCH_LENGTH
 
-    # Troviamo il punto medio temporale per separare matematicamente il 1° dal 2° tempo (Specchiamento dell'intero campo)
+    # Individuazione del punto di split (cambio campo fine primo tempo)
     print("Analizzando timestamps per determinare la fine del primo tempo...")
     unique_timestamps = sorted(df_clean['timestamp'].unique())
     ts_diffs = np.diff(unique_timestamps)
