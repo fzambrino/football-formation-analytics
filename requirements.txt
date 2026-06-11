@@ -5,3 +5,6 @@ pyarrow
 # --- Data Visualization & Pitch Drawing ---
 mplsoccer
 matplotlib
+
+# --- Machine Learning & Clustering ---
+scikit-learn

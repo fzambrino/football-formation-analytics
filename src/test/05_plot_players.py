@@ -13,7 +13,7 @@ def main():
     # Configurazione dei percorsi dei file
     script_dir = os.path.dirname(os.path.abspath(__file__))
     parquet_path = os.path.join(script_dir, "..", "data", "processed", "integrated_tracking_data.parquet")
-    output_dir = os.path.join(script_dir, "..", "out", "snapshot_test")
+    output_dir = os.path.join(script_dir, "..", "out", "test", "snapshot_test")
     os.makedirs(output_dir, exist_ok=True)
 
     if not os.path.exists(parquet_path):
