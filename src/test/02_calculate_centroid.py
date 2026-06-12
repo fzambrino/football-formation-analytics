@@ -24,7 +24,7 @@ try:
             if giocatore["role"] != "g":  # Esclusione del portiere ('g') dal centroide tattico
                 lista_posizioni.append({
                     "timestamp": timestamp,
-                    "team": giocatore["team"],  # H = Roma, A = Inter
+                    "team": giocatore["team"],  # H (in casa), A (fuori casa)
                     "x": giocatore["x"],        # Coordinata X in metri
                     "y": giocatore["y"]         # Coordinata Y in metri
                 })
