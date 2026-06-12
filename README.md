@@ -2,6 +2,7 @@
 
 ## Indice
 * [Panoramica del Progetto](#panoramica-del-progetto)
+* [Origine dei Dati](#origine-dei-dati)
 * [Architettura del Sistema](#architettura-del-sistema)
 * [Stack Tecnologico](#stack-tecnologico)
 * [Guida alla Configurazione](#guida-alla-configurazione)
@@ -40,6 +41,15 @@ modificare o correggere il modulo proposto dall'algoritmo geometrico. Questo pro
 precisione.
 * **Modellazione Predittiva:** Un classificatore **Random Forest** viene addestrato su questo dataset validato dall'uomo. Imparando dalle correzioni
 dell'esperto, il modello di Machine Learning diventa capace di prevedere e riconoscere in automatico le formazioni su nuovi dati di partita mai visti prima.
+
+---
+
+## Origine dei Dati
+
+Per preservare la riservatezza dei dati e rispettare i vincoli di licenza aziendale, tutte le metriche sensibili relative a specifiche squadre, calciatori ed eventi di gara sono state rigorosamente anonimizzate e ricondotte a identificativi generici. Il framework elabora le informazioni combinando due flussi di dati complementari:
+
+1. **Dati di Tracking Posizionale (Sorgente Commerciale):** Forniti da sistemi professionali di tracciamento ottico (**Opta Vision**). Il dataset raccoglie le coordinate bidimensionali cartesiane `(x, y)` dei 22 calciatori e del pallone frame per frame. Le posizioni sono state normalizzate nell'infrastruttura di pre-processing seguendo le dimensioni metriche regolamentari FIFA (Lunghezza: `[-52.5, 52.5]` metri; Larghezza: `[-34.0, 34.0]` metri).
+2. **Dati d'Evento Pubblici (Sorgente Open-Source):** L'addestramento, il testing e la sincronizzazione temporale degli eventi si appoggiano al dataset pubblico di match-events [fypdata](https://www.kaggle.com/datasets/hashirhalaldeen/fypdata) disponibile sulla piattaforma **Kaggle**. Questo flusso fornisce la cronologia degli eventi di gara (posizioni, sostituzioni, ruoli, ...) fondamentale per l'unificazione e la persistenza degli ID di ruolo durante i cambi tattici (implementazione del paradigma *Human-in-the-Loop*).
 
 ---
 
