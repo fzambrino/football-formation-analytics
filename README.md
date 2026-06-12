@@ -3,7 +3,7 @@
 ## Indice
 * [Panoramica del Progetto](#panoramica-del-progetto)
 * [Architettura del Sistema](#️architettura-del-sistema)
-* [Stack Tecnologico Core](#️stack-tecnologico-core)
+* [Stack Tecnologico](#️stack-tecnologico)
 * [Guida alla Configurazione](#guida-alla-configurazione)
 * [Struttura del Progetto](#struttura-del-progetto)
 * [Contesto e Autore](#contesto-e-autore)
@@ -58,7 +58,7 @@ e di prevedere in autonomia le formazioni su nuovi dati di gioco.
 
 ---
 
-## Stack Tecnologico Core
+## Stack Tecnologico
 
 Il progetto è sviluppato in **Python** e si appoggia sul seguente ecosistema di librerie:
 * **Modellazione Geometrica e ML:** `scikit-learn` (per gli algoritmi di Clustering K-Means, Agglomerative e il classificatore Random Forest)
