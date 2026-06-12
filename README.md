@@ -118,6 +118,9 @@ football-formation-analytics/
 ├── requirements.txt            # Dipendenze bloccate per la riproducibilità dell'ambiente
 └── README.md
 ```
+> ⚠️ **Nota sulla disponibilità delle cartelle:**
+> * **`data/`**: Questa cartella **non è presente nel repository** in quanto i dataset di tracking posizionale e d'evento contengono dati commerciali protetti da accordi di riservatezza e file ad alta intensità di memoria (`.parquet`, `.json`, `.csv`) non idonei al versionamento Git. I flussi di dati devono essere allocati localmente prima di eseguire i notebook.
+> * **`out/`**: Questa cartella **non è inclusa nella build iniziale** poiché viene generata automaticamente a runtime dagli script di elaborazione e rendering grafico per accogliere gli output tattici aggiornati.
 
 ---
 
