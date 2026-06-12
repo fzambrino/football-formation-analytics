@@ -2,8 +2,8 @@
 
 ## Indice
 * [Panoramica del Progetto](#panoramica-del-progetto)
-* [Architettura del Sistema](#️architettura-del-sistema)
-* [Stack Tecnologico](#️stack-tecnologico)
+* [Architettura del Sistema](#architettura-del-sistema)
+* [Stack Tecnologico](#stack-tecnologico)
 * [Guida alla Configurazione](#guida-alla-configurazione)
 * [Struttura del Progetto](#struttura-del-progetto)
 * [Contesto e Autore](#contesto-e-autore)
