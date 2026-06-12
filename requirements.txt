@@ -1,7 +1,16 @@
-# --- Data Ingestion & ETL ---
-pandas
-pyarrow
+# CORE DATA SCIENCE, ETL & PARQUET MANAGEMENT
+numpy==2.4.6
+pandas==3.0.3
+pyarrow==24.0.0
 
-# --- Data Visualization & Pitch Drawing ---
-mplsoccer
-matplotlib
+# MACHINE LEARNING, DATA MINING & CLUSTERING
+scikit-learn==1.9.0
+scipy==1.17.1
+
+# FOOTBALL ANALYTICS, GRAPHICS & NOTEBOOK INTERACTIVITY
+matplotlib==3.10.0
+mplsoccer==1.6.1
+seaborn==0.13.2
+ipywidgets==8.1.8
+ipython==9.14.1
+notebook==7.5.7

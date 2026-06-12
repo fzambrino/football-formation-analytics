@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# SCRIPT 07: ANALISI DELLE SERIE TEMPORALI E INTERDIPENDENZA DEI CENTROIDI
+# SCRIPT 07: TEST DI ANALISI DELLE SERIE TEMPORALI E INTERDIPENDENZA DEI CENTROIDI
 # Questo script analizza l'evoluzione temporale dei centroidi delle due squadre lungo l'intero match (0-90 minuti).
 # Integra una logica di "specchiamento della coordinata X" (Mirroring) per il secondo tempo,
 # invertendo matematicamente i lati per correggere il cambio campo.
@@ -15,7 +15,7 @@ def main():
     # Configurazione dei percorsi dei file
     script_dir = os.path.dirname(os.path.abspath(__file__))
     parquet_path = os.path.join(script_dir, "..", "data", "processed", "integrated_tracking_data.parquet")
-    output_dir = os.path.join(script_dir, "..", "out", "centroid_analysis")
+    output_dir = os.path.join(script_dir, "..", "out", "test", "centroid_analysis_test")
     os.makedirs(output_dir, exist_ok=True)
 
     if not os.path.exists(parquet_path):
@@ -36,7 +36,7 @@ def main():
     x_clamped = np.clip(df_clean['x'], X_MIN, X_MAX)
     df_clean['x_normalized'] = ((x_clamped - X_MIN) / (X_MAX - X_MIN)) * PITCH_LENGTH
 
-    # Troviamo il punto medio temporale per separare matematicamente il 1° dal 2° tempo (Specchiamento dell'intero campo)
+    # Individuazione del punto di split (cambio campo fine primo tempo)
     print("Analizzando timestamps per determinare la fine del primo tempo...")
     unique_timestamps = sorted(df_clean['timestamp'].unique())
     ts_diffs = np.diff(unique_timestamps)
