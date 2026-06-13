@@ -6,7 +6,7 @@ import pandas as pd
 
 # Calcolo dinamico dei percorsi
 script_dir = os.path.dirname(os.path.abspath(__file__))
-file_tracking = os.path.abspath(os.path.join(script_dir, "..", "data", "raw", "tracking", "output0.json"))
+file_tracking = os.path.abspath(os.path.join(script_dir, "..", "..", "data", "raw", "tracking", "output0.json"))
 
 print("--- Pipeline Sports Analytics: Calcolo del Centroide ---")
 

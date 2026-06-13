@@ -5,7 +5,7 @@ import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Percorso per trovare il file .json in data/raw
-percorso_file = os.path.abspath(os.path.join(script_dir, "..", "data", "raw", "MA1_opta_match.json"))
+percorso_file = os.path.abspath(os.path.join(script_dir, "..", "..", "data", "raw", "MA1_opta_match.json"))
 
 print("--- Test di verifica ambiente e dati (Percorso Corretto) ---")
 print(f"Sto cercando il file in:\n--> {percorso_file}\n")

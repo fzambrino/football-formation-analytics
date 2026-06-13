@@ -11,7 +11,7 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
     # Definisce la directory di output (out/). Se non esiste, la crea
-    output_dir = os.path.join(script_dir, "..", "out", "test", "pitch_test")
+    output_dir = os.path.join(script_dir, "..", "..", "out", "test", "pitch_test")
     os.makedirs(output_dir, exist_ok=True)
 
     print("Disegnando il campo da calcio...")
