@@ -1,0 +1,26 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# Esclude i file pesanti di data/
+data/
+
+# Esclude i file prodotti
+out/
+
+# Esclude i modelli di Deep Learning (YOLO/PyTorch)
+*.pt
+
+# Esclude il modello yolo usato per il tracking
+runs/
+
+# Esclude il file con le credenziali di Roboflow
+.env
+
+# Esclude i file di configurazione
+*.iml
