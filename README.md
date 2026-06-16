@@ -152,7 +152,7 @@ football-formation-analytics/
 ├── analysis/                   # Notebook Jupyter
     ├── geometricalAnalysis     # Notebook Jupyter soluzione grafica 
     ├── MLAnalysis              # Notebook Jupyter soluzione basata sul Machine Learning 
-    ├── test                    # File di test usati preliminarmente per testare il corretto funzionamento
+    ├── test                    # File di test preliminari per testare il corretto funzionamento
     ├── .py                     # File utile al processamento dei dati
 ├── data/                       # Dataset di tracking posizionale e dati d'evento
 ├── out/                        # Cartella standardizzata per i grafici e gli output tattici
