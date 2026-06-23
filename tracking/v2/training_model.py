@@ -2,7 +2,7 @@ import os
 from ultralytics import YOLO
 
 # Avvia l'addestramento del modello
-print("=== AVVIO ADDESTRAMENTO DATASET SERIO (58 FRAME - 50 EPOCHE) ===")
+print("=== AVVIO ADDESTRAMENTO DATASET (120 FRAME - 50 EPOCHE) ===")
 
 # Gestione dei file di output
 script_dir = os.path.dirname(os.path.abspath(__file__))
